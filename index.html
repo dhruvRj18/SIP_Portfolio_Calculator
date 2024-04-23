@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Investment Calculator</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>SIP Investment Calculator</h1>
+
+    <form id="calculator-form">
+        <label for="years">Number of years:</label>
+        <input type="number" id="years" name="years" value="10"><br><br>
+
+        <label for="sip-amount">SIP amount per month:</label>
+        <input type="number" id="sip-amount" name="sip-amount" value="10000"><br><br>
+
+        <label for="interest-rate">Expected annual interest rate (%):</label>
+        <input type="number" id="interest-rate" name="interest-rate" value="7"><br><br>
+
+        <label for="inflation-rate">Expected annual inflation rate (%):</label>
+        <input type="number" id="inflation-rate" name="inflation-rate" value="4"><br><br>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Div to hold the Plotly Chart -->
+    <div id="plotly-chart"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
